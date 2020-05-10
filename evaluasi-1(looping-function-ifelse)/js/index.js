@@ -21,7 +21,7 @@ looping(`div`, `ini adalah baru `, 5);
 let myDiv = container2.querySelectorAll('div');
 for (let i = 0; i < myDiv.length; i++) {
 
-    for (let j = i; j < myDiv.length; j++) {
+    for (let j = i; j <= i; j++) {
 
         myDiv[i].classList.add(`kotak${j}`);
     }
