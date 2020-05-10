@@ -15,7 +15,8 @@ let looping = function (element, text, jumlah) {
     }
 }
 
-looping(`div`, `ini adalah baru `, 5);
+
+looping(`div`, `baru`, 5);
 
 // event onclick
 let myDiv = container2.querySelectorAll('div');
@@ -23,7 +24,7 @@ for (let i = 0; i < myDiv.length; i++) {
 
     for (let j = i; j <= i; j++) {
 
-        myDiv[i].classList.add(`kotak${j}`);
+        myDiv[i].classList.add(`kotak${j +1}`);
     }
 
 }
