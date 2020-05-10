@@ -1,0 +1,65 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$warna : (warna1 : #1abc9c,
+    warna2 : #3498db,
+    warna3 : #9b59b6,
+    warna4 : #34495e,
+    warna5 : #f1c40f,
+    warna6 : #e67e22,
+    warna7 : #e74c3c,
+    warna8 : #bdc3c7,
+    warna9 : #2ecc71,
+    warna10 : #16a085);
+
+.container {
+    .box1 {
+        background-color: map-get($warna, warna1);
+    }
+
+    .box2 {
+        background-color: map-get($warna, warna2);
+    }
+
+    .box3 {
+        background-color: map-get($warna, warna3);
+    }
+
+    .box4 {
+        background-color: map-get($warna, warna4);
+    }
+
+    .box5 {
+        background-color: map-get($warna, warna5);
+    }
+
+    .box6 {
+        background-color: map-get($warna, warna6);
+    }
+
+    .box7 {
+        background-color: map-get($warna, warna7);
+    }
+
+    .box8 {
+        background-color: map-get($warna, warna8);
+    }
+
+    .box9 {
+        background-color: map-get($warna, warna9);
+    }
+
+    .box10 {
+        background-color: map-get($warna, warna10);
+    }
+
+}
+
+.container2 {
+    .box2 {
+        background-color: map-get($warna, warna1);
+    }
+}
