@@ -2,21 +2,21 @@
 let container = document.querySelector('.container');
 
 
-let newEl = function (element, text) {
+let newEl = function (element) {
     let el = document.createElement(element);
-    el.innerText = text;
+    // el.innerText = text;
     el.classList.add('box')
     return container.appendChild(el);
 }
 
-let looping = function (element, text, jumlah) {
+let looping = function (element, jumlah) {
     for (let a = 1; a <= jumlah; a++) {
-        newEl(element, text);
+        newEl(element);
     }
 }
 
 
-looping(`div`, `baru`, 10);
+looping(`div`, 13);
 
 // event onclick
 let myDiv = container.querySelectorAll('div');
@@ -25,6 +25,7 @@ for (let i = 0; i < myDiv.length; i++) {
     for (let j = i; j <= i; j++) {
 
         myDiv[i].classList.add(`box${j +1}`);
+        myDiv[i].innerText = `elemen ${j +1}`;
     }
 
 }
